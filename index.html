@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dường Muối</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- FORM DANG KY -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Đăng ký tài khoản</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="Họ" required>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" placeholder="Tên" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" class="form-control" placeholder="Ngày sinh" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="@Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" required>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="agree" required>
+                                <label class="form-check-label" for="agree">
+                                    Tôi đồng ý với <a href="#">điều khoản và quy định</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary btn-block w-100" form="registerForm">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- end form dang ky -->
+
+
+
+    <!-- ==================== TOP BAR  ==================== -->
+    <header class="top-bar">
+        <div class="container-fluid top-bar-inner d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="logo-area">
+                <a href="#">
+                    <img src="./assets/image/f7b6b41e-f93d-4fbb-8c50-19b1e1e4708a.txt" alt="TDTU Logo"
+                        class="main-logo">
+                </a>
+            </div>
+
+            <!-- Search Bar  -->
+            <div class="search-bar ">
+
+                <i class="fas fa-search search-icon"></i>
+                <input type="search" placeholder="Search" class="search-input">
+            </div>
+
+            <!-- User Actions -->
+            <div class="user-actions d-flex align-items-center">
+                <!-- Nút có chữ -->
+                <button class="action-btn create-btn d-none d-md-inline-flex align-items-center">
+                    <i class="fas fa-plus"></i><span>Create</span>
+                </button>
+                <button class="action-btn ai-chat-btn d-none d-md-inline-flex align-items-center">
+                    <i class="fa-regular fa-comment"></i><span>AI Chat</span>
+                </button>
+                <!-- Nút icon -->
+                <button class="action-btn icon-btn notification-btn">
+                    <i class="fas fa-bell"></i>
+                </button>
+
+                <button class="action-btn icon-btn profile-btn btn btn-primary" type="button" data-toggle="modal"
+                    data-target="#exampleModal">
+                    <i class="fas fa-user"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT AREA  ==================== -->
+    <main class="main-container container-fluid">
+
+
+        <div class="row">
+            <!-- ==================== LEFT SIDEBAR  ==================== -->
+
+            <aside class="col-md-4 col-lg-3 d-none d-md-block left-sidebar">
+                <div class="close-nav-btn">x</div>
+                <div class="sidebar-inner">
+
+                    <!-- Main Navigation -->
+                    <nav class="main-nav custom-nav">
+
+                        <ul>
+                            <li class="nav-item active"><a href="http://127.0.0.1:5500/index.html?#" class="nav-link"><i
+                                        class="fas fa-home fa-fw"></i><span>Home</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-bookmark"></i><span>Archive</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-book-open"></i><span>Document</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i><span>Marketplace</span></a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Topics Navigation -->
+                    <nav class="topics-nav custom-nav text-right">
+                        <h3 class="nav-title"># Topic</h3>
+                        <ul>
+                            <li class="nav-item"><a href="#" class="nav-link"># Share đáp án TDTU</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># IT-Zone</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># CNTT</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># Electronics</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># Art</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># Tài liệu học tập</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># Kỹ năng sống</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"># Step - up</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Utility Navigation -->
+                    <nav class="utility-nav custom-nav">
+                        <ul>
+                            <li class="nav-item"><a href="#" class="nav-link"><i
+                                        class="fas fa-info-circle fa-fw"></i><span>About us</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i
+                                        class="fas fa-file-contract fa-fw"></i><span>Terms & Conditions</span></a></li>
+                            <li class="nav-item"><a href="#" class="nav-link"><i
+                                        class="fas fa-comment-alt fa-fw"></i><span>Feedback</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- ==================== CENTER FEED  ==================== -->
+            <section class="col-12 col-md-8 col-lg-6 feed-content scrollable-div">
+
+                <!-- content -->
+
+
+
+            </section>
+
+            <!-- ==================== RIGHT SIDEBAR  ==================== -->
+
+            <aside class="col-lg-3 d-none d-lg-block right-sidebar">
+                <div class="sidebar-inner">
+                    <!-- Ranking Widget  -->
+                    <div class="ranking-widget">
+                        <header class="widget-header">
+
+                            <h3 class="widget-title"># Ranking</h3>
+                            <div class="ranking-filter">
+                                <span class="filter-label">Sinh viên năng nổ nhất</span>
+
+                            </div>
+                        </header>
+                        <ul class="ranking-list">
+
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+        </div> <!-- Kết thúc .row -->
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
